@@ -75,6 +75,55 @@ api_address1=1377
 web_address1=9690
 grpc_address1=9691
 ```
+
+Для 8 ноды
+```
+proxy_app1=60858
+rpc_laddr1=60857
+pprof_laddr1=6067
+p2p_laddr1=60856
+prometheus_listen_addr1=60860
+api_address1=1387
+web_address1=9790
+grpc_address1=9791
+```
+
+Для 9 ноды
+```
+proxy_app1=60958
+rpc_laddr1=60957
+pprof_laddr1=6068
+p2p_laddr1=60956
+prometheus_listen_addr1=60960
+api_address1=1397
+web_address1=9890
+grpc_address1=9891
+```
+
+Для 10 ноды
+```
+proxy_app1=61058
+rpc_laddr1=61057
+pprof_laddr1=6069
+p2p_laddr1=61056
+prometheus_listen_addr1=61060
+api_address1=1407
+web_address1=9990
+grpc_address1=9991
+```
+
+Для 11 ноды
+```
+proxy_app1=61158
+rpc_laddr1=61157
+pprof_laddr1=6070
+p2p_laddr1=61156
+prometheus_listen_addr1=61160
+api_address1=1417
+web_address1=9910
+grpc_address1=9901
+```
+
 В config.toml сначала меняем порты:
 #proxy_app = “tcp://127.0.0.1:26658”
 #rpc laddr = “tcp://127.0.0.1:26657”
