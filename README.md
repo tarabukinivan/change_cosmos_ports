@@ -143,6 +143,8 @@ sed -i.bak -e "s%^proxy_app = \"tcp://127.0.0.1:26658\"%proxy_app = \"tcp://127.
 
 ```
 sed -i.bak -e "s%^address = \"0.0.0.0:9090\"%address = \"0.0.0.0:$web_address1\"%; s%^address = \"0.0.0.0:9091\"%address = \"0.0.0.0:$grpc_address1\"%; s%^address = \"tcp://0.0.0.0:1317\"%address = \"tcp://0.0.0.0:$api_address1\"%" $HOME/$noda/config/app.toml
+
+sed -i.bak -e "s%^address = \"localhost:9090\"%address = \"0.0.0.0:$web_address1\"%; s%^address = \"localhost:9091\"%address = \"0.0.0.0:$grpc_address1\"%; s%^address = \"tcp://localhost:1317\"%address = \"tcp://0.0.0.0:$api_address1\"%" $HOME/$noda/config/app.toml
 ```
 
 # client.toml
